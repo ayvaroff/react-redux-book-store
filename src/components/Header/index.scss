@@ -1,0 +1,27 @@
+header {
+    background: #2f2f2f;
+    text-align: center;
+
+    .main-menu {
+        display: inline-block;
+        font-size: 1.2em;
+
+        ul {
+            overflow: auto;
+            
+            li {
+                float: left;
+            }
+        }
+        
+        a {
+            display: block;
+            padding: 20px 15px;
+            color: #fff;
+
+            &:hover {
+                background-color: goldenrod;
+            }
+        }
+    }
+}

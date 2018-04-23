@@ -1,0 +1,59 @@
+{
+  "name": "react-redux-book-store",
+  "version": "1.0.0",
+  "description": "Sample app using react with redux saga.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.prod.config.js --progress --colors",
+    "start": "webpack-dev-server --config webpack.dev.config.js --progress --colors",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anton Ayvarov",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "env",
+      "react",
+      "stage-2"
+    ]
+  },
+  "dependencies": {
+    "axios": "~0.18.0",
+    "prop-types": "~15.6.1",
+    "react": "~16.3.0",
+    "react-dom": "~16.3.0",
+    "react-redux": "~5.0.7",
+    "react-router-dom": "~4.2.2",
+    "redux": "~3.7.2",
+    "redux-actions": "~2.3.0",
+    "redux-logger": "~3.0.6",
+    "redux-saga": "~0.16.0"
+  },
+  "devDependencies": {
+    "babel-core": "~6.26.0",
+    "babel-eslint": "~8.2.3",
+    "babel-loader": "~7.1.4",
+    "babel-polyfill": "~6.26.0",
+    "babel-preset-env": "~1.6.1",
+    "babel-preset-react": "~6.24.1",
+    "babel-preset-stage-0": "~6.24.1",
+    "css-loader": "~0.28.11",
+    "eslint": "~4.19.1",
+    "eslint-import-resolver-webpack": "~0.9.0",
+    "eslint-loader": "~2.0.0",
+    "eslint-plugin-import": "~2.11.0",
+    "eslint-plugin-jsx-a11y": "~6.0.3",
+    "eslint-plugin-react": "~7.7.0",
+    "extract-text-webpack-plugin": "~4.0.0-beta.0",
+    "node-sass": "~4.8.3",
+    "react-hot-loader": "~4.0.1",
+    "redux-devtools": "~3.4.1",
+    "redux-devtools-dock-monitor": "~1.1.3",
+    "redux-devtools-log-monitor": "~1.4.0",
+    "sass-loader": "~6.0.7",
+    "style-loader": "~0.20.3",
+    "webpack": "~4.4.1",
+    "webpack-cli": "~2.0.13",
+    "webpack-dev-server": "~3.1.1"
+  }
+}
