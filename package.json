@@ -8,8 +8,21 @@
     "start": "webpack-dev-server --config webpack.dev.config.js --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomRossA/react-redux-book-store.git"
+  },
+  "keywords": [
+    "React",
+    "Redux",
+    "Sample",
+    "Example",
+    "Saga",
+    "Redux-Saga"
+  ],
   "author": "Anton Ayvarov",
   "license": "MIT",
+  "homepage": "https://github.com/TomRossA/react-redux-book-store.git#readme",
   "babel": {
     "presets": [
       "env",
