@@ -2,76 +2,42 @@ import Http from 'Utils/http';
 
 const API_ROOT = 'http://localhost:3000'
 
-export const getAllBooks = () => {
-    let baseUrl = API_ROOT + '/books';
-    let params = {
-        url: baseUrl
-    };
-    return Http.get(params)
+const request = (method, endpoint, payload) => {
+    let baseUrl = API_ROOT + endpoint;
+    let params = { url: baseUrl }
+    if (payload) {
+        params.data = payload
+    }
+    return Http[method](params)
         .then(response => response.data)
         .catch(err => {
             throw err;
         });
+}
+
+export const getAllBooks = () => {
+    return request('get', '/books');
 }
 
 export const getBook = (bookId) => {
-    let baseUrl = API_ROOT + '/books/' + bookId;
-    let params = {
-        url: baseUrl
-    };
-    return Http.get(params)
-        .then(response => response.data)
-        .catch(err => {
-            throw err;
-        });
+    let endpoint = '/books/' + bookId;
+    return request('get', endpoint);
 }
 
 export const addBook = (book) => {
-    let baseUrl = API_ROOT + '/books';
-    let params = {
-        url: baseUrl,
-        data: book
-    };
-    return Http.post(params)
-        .then(response => response.data)
-        .catch(err => {
-            throw err;
-        });
+    return request('post', '/books', book);
 }
 
 export const updateBook = (book) => {
-    let baseUrl = API_ROOT + '/books/' + book.id;
-    let params = {
-        url: baseUrl,
-        data: book
-    };
-    return Http.put(params)
-        .then(response => response.data)
-        .catch(err => {
-            throw err;
-        });
+    let endpoint = '/books/' + book.id;
+    return request('put', endpoint, book);
 }
 
 export const removeBook = (bookId) => {
-    let baseUrl = API_ROOT + '/books/' + bookId;
-    let params = {
-        url: baseUrl
-    };
-    return Http.remove(params)
-        .then(response => response.data)
-        .catch(err => {
-            throw err;
-        });
+    let endpoint = '/books/' + bookId;
+    return request('remove', endpoint);
 }
 
 export const getAllBookStores = () => {
-    let baseUrl = API_ROOT + '/bookstores';
-    let params = {
-        url: baseUrl
-    };
-    return Http.get(params)
-        .then(response => response.data)
-        .catch(err => {
-            throw err;
-        });
+    return request('get', '/bookstores');
 }
