@@ -1,17 +1,17 @@
-import { connect } from 'react-redux';
+import { connect } from 'react-redux'
 
-import BooksList from '../components/BooksList';
-import * as Actions from '../redux/actions';
+import BooksList from '../components/BooksList'
+import * as Actions from '../redux/actions'
 
 const mapStateToProps = state => ({
-    books: state.books
-});
+  books: state.books
+})
 
 const mapDispatchToProps = dispatch => ({
-    getAllBooks: () => dispatch(Actions.getAllBooks())
-});
+  getAllBooks: () => dispatch(Actions.getAllBooks())
+})
 
 export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(BooksList);
+  mapStateToProps,
+  mapDispatchToProps
+)(BooksList)

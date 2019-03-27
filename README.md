@@ -10,10 +10,10 @@ To install application run
 npm install
 ```
 
-To start application
+To run the application
 
 ```
-npm start
+npm run dev
 ```
 
 ## Built With
@@ -25,8 +25,8 @@ npm start
 
 ## Authors
 
-* **Anton Ayvarov** - *Frontend developer* - [TomRossA](https://github.com/TomRossA)
+* **Anton Ayvarov** - *Frontend developer* - [ayvaroff](https://github.com/ayvaroff)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is unlicensed.

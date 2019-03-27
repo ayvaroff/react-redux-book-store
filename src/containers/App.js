@@ -1,16 +1,13 @@
-import React from 'react';
+import React from 'react'
 
-import Header from '../components/Header';
-import Main from '../components/Main';
-
-import '../styles/normalize.scss';
-import './App.scss';
+import Header from '../components/Header'
+import Main from '../components/Main'
 
 const App = () => (
-    <div className="app-container">
-        <Header />
-        <Main />
-    </div>
-);
+  <div className="app-container">
+    <Header />
+    <Main />
+  </div>
+)
 
-export default App;
+export default App

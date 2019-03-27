@@ -1,0 +1,64 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "extends": ["airbnb"],
+  "plugins": [],
+  "env": {
+    "browser": true,
+    "jest": true,
+    "node": true
+  },
+  "globals": {
+    "__DEV__": true,
+    "__PROD__": true,
+    "__DEBUG__": true,
+    "__COVERAGE__": true,
+    "__BASENAME__": true
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack/webpack3.config.js"
+      }
+    }
+  },
+  "rules": {
+    "linebreak-style": ["error", "unix"],
+    "semi": ["error", "never"],
+    "comma-dangle": ["error", "only-multiline"],
+    "max-len": "off",
+    "no-shadow": "off",
+    "arrow-body-style": "off",
+    "arrow-parens": "off",
+    "global-require": "off",
+    "no-unused-expressions": "off",
+    "no-confusing-arrow": "off",
+    "react/no-did-mount-set-state": "off",
+    "no-unused-vars": [
+      "error",
+      { "vars": "all", "args": "after-used", "ignoreRestSiblings": true, "argsIgnorePattern": "^_" }
+    ],
+    "no-constant-condition": "off",
+    "object-curly-newline": "off",
+    "function-paren-newline": "off",
+    "jsx-a11y/html-has-lang": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["to"]
+      }
+    ],
+    "import/no-dynamic-require": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+    "react/require-default-props": "off",
+    "react/forbid-prop-types": "off",
+    "react/no-unused-prop-types": "off",
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }]
+  }
+}
